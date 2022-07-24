@@ -92,27 +92,46 @@
         </button>
     </div>
 
-    <div class="container d-flex p-5 ">
-        <div class="image w-50">
-            <img src="images/wedding.png" alt="" srcset="">
-        </div>
-        <div class="container p-5 align-content-center">
-            <h1>every moment is precious</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic consectetur sint dolor dolorum praesentium
-                quaerat officia quis provident vero, enim consequatur assumenda sed nisi veritatis repudiandae, quidem
-                quam possimus. Facilis.</p>
-            <button>Explore our album ></button>
+    <div class="container p-5 ">
+        <div class="row position-relative">
+            <div class="col-md-6">
+                <img src="images/wedding.png" alt="" srcset="">
+            </div>
+            <!-- Workng with model -->
+
+            <!-- Second portion -->
+            <div class="col-md-6 ">
+                <div class="container p-5 align-content-center">
+                    <h1 class="p-4">Every moment is precious</h1>
+                    <div class="alert alert-primary alert-dismissible fade show w-25 position-absolute end-0 bottom-50"
+                        role="alert">
+                        <p> <img src="icons/Vector.svg" alt=""> 20% off on next booking</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic consectetur sint dolor dolorum
+                        praesentium
+                        quaerat officia quis provident vero, enim consequatur assumenda sed nisi veritatis repudiandae,
+                        quidem
+                        quam possimus. Facilis.</p>
+                    <button class="bg-primary rounded">Explore our album <img src="icons/arrow-forward 1.svg"
+                            alt=""></button>
+                </div>
+
+
+
+            </div>
+
 
         </div>
     </div>
 
     <!-- package card -->
 
-    <div class="card p-5">
+    <div class="container p-5">
         <h1 class="text-center p-5">Our Package</h1>
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
-                <div class="card">
+                <div class="card mt-5">
                     <div class="card-body">
                         <h2 class="card-title">$300</h2>
                         <h3>Business Fair</h3>
@@ -129,7 +148,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card mt-5">
                     <div class="card-body">
                         <h2 class="card-title">$500</h2>
                         <h3>Wedding basic</h3>
@@ -146,9 +165,13 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card-active bg-primary h-5">
-                    <div class="card-body">
+                <div class="card bg-primary h-100 shadow ">
+
+
+                    <div class="card-body position-relative text-light">
                         <h2 class="card-title">$800</h2>
+                        <span
+                            class="badge text-bg-danger position-absolute top-0 end-0 translate-middle  rounded-pill">Hot</span>
                         <h3>Wedding plus</h3>
                         <p class="card-text">For most weddings with premium plans</p>
                         <ul>
@@ -158,12 +181,14 @@
                             <li>Decoration design</li>
                             <li>Billed as shift</li>
                         </ul>
-                        <button>Choose plan</button>
+                        <button class="btn btn-light text-primary mt-4">Choose plan</button>
                     </div>
+
+                    <!-- badge -->
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card border-0 mt-5">
                     <div class="card-body">
                         <h2 class="card-title">$1200</h2>
                         <h3>Corporate Event</h3>
@@ -180,8 +205,11 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+
+
+
 
 
     <!--client review -->
@@ -320,7 +348,6 @@
 
         </div>
     </footer>
-
 
 
 
